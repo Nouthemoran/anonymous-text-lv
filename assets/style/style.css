@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body {
+  background-color: rgb(36, 36, 36);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+#waktu h1 {
+  font-family: "Fredoka";
+  font-weight: 20;
+  font-size: 70px;
+  color: white;
+}
+
+#waktu p {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.background1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/bg1.jpg');
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.background2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/bg2.png');
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.muncul {
+  animation: muncul 1200ms ease;
+}
+
+@keyframes muncul {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.body {
+  background-color: rgb(133, 133, 133);
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: -999;
+  overflow: hidden;
+}
+
+#waktu {
+  margin: 7rem 1rem 0;
+}
+
+.messege-box {
+  text-align: left;
+  background-color: rgb(233, 233, 233, 0.9);
+  border-radius: 1rem;
+  margin: 2rem 1rem;
+  padding: 15px;
+  line-height: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.801);
+  cursor: pointer;
+  transform: translateX(-100vw);
+  transition: 500ms all ease;
+}
+
+.content {
+  margin-top: 0.5rem;
+}
+
+.content .nama {
+  font-size: 12px;
+}
+
+.content .pesan {
+  font-size: 15px;
+}
+
+#button {
+  position: absolute;
+  bottom: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#button button {
+  font-size: 20px;
+  font-family: 'Fredoka';
+  border-style: none;
+  border-radius: 0.5rem;
+  padding: 5px 15px;
+}
+
+#button button.hilang2{
+  font-size: 20px;
+  color:white;
+  background: rgb(19, 138, 54);
+  font-family: 'Fredoka';
+  border-style: none;
+  border-radius: 0.5rem;
+  padding: 5px 15px;
+}
+
+.goyang {
+  animation: goyang 1200ms infinite ease;
+}
+
+@keyframes goyang {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(10);
+  }
+}
+
+.kelip {
+  animation: kelip 1200ms infinite ease;
+}
+
+@keyframes kelip {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.notif-wa {
+  box-sizing: border-box;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.left-header {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+
+.left-header p {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.notif-wa img {
+  width: 25px;
+  box-sizing: border-box;
+  height: auto;
+  background-size: cover;
+}
+
+.hilang {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .body {
+    width: 470px;
+  }
+}
